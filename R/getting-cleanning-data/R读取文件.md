@@ -53,13 +53,15 @@ read\_excel(path, sheet = 1, col\_names = TRUE, col\_types = NULL, na = "", skip
 
 ### 一个具体的例子
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;message&gt;
-&lt;to&gt;房，姜&lt;/to&gt;
-&lt;from&gt;高&lt;/from&gt;
-&lt;heading&gt;午餐&lt;/heading&gt;
-&lt;content time="noon"&gt;中午怎么吃？点外卖？小白房？还是食堂？&lt;/content&gt;
-&lt;/message&gt;
+``` html
+<?xml version="1.0" encoding="UTF-8"?>   
+<message>   
+<to>房，姜\</to>    
+<from>高\</from>   
+<heading>午餐\</heading>   
+<content time="noon">中午怎么吃？点外卖？小白房？还是食堂？\</content>   
+</message>  
+```
 
 以上就是一个XML的例子，它拥有发送者和接受者，标题，内容等信息，所以自我描述非常清晰。但是这个文档实际上只是包装了一些数据信息，而并没有做任何传输、接收和显示文档的信息，也就说你可以把他当成一个纯文本。纯文本的特点会让你在不同的操作系统进行数据共享的门槛大大降低。
 
