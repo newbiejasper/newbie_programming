@@ -33,3 +33,5 @@
 17.os.path.basename(path)——返回文件名
 
 18. os.path.dirname(path)——返回文件路径
+
+
