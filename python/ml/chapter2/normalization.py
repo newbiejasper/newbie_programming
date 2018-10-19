@@ -14,4 +14,4 @@ def autoNorm(dataSet):
     m = dataSet.shape[0] #dataSet的行数
     normDataSet = dataSet-np.tile(minVals,(m,1)) #把最小值的数组沿着行方向重复m次，列方向一次
     normDataSet = normDataSet/np.tile(ranges,(m,1)) 
-    return(normDataSet,minVals)
+    return(normDataSet,ranges,minVals)
